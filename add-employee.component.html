@@ -1,0 +1,83 @@
+<div *ngIf="alert"  class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="addEmployee" (ngSubmit)= "collectEmployee()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">First Name:</label>
+      <input class="form-control" 
+            placeholder="Enter First Name"
+            formControlName = "FName">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Last Name:</label>
+      <input class="form-control" 
+            placeholder="Enter Last Name"
+            formControlName = "LName">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Status</label>
+      <input class="form-control" 
+            placeholder="Active/In Active"
+            formControlName = "Status">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Gender</label>
+      <input  
+            class="form-control" 
+            placeholder="Enter email"
+            formControlName = "Gender">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Designation</label>
+      <input  class="form-control" 
+      placeholder="Enter email"
+      formControlName = "Designation">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Department</label>
+      <input  class="form-control" 
+      placeholder="Enter email"
+      formControlName = "Department">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Date of birth(Date)</label>
+      <input class="form-control" 
+      placeholder="Enter email"
+      formControlName = "DOBD">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Date of birth(Month)</label>
+      <input class="form-control" 
+            placeholder="Enter email"
+            formControlName = "DOBM">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Date of birth(Year)</label>
+      <input class="form-control" 
+            placeholder="Enter email"
+            formControlName = "DOBY">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Joining Date(Date)</label>
+      <input class="form-control" 
+            placeholder="Enter email"
+            formControlName = "JDD">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Joining Date(Month)</label>
+      <input class="form-control" 
+            placeholder="Enter email"
+            formControlName = "JDM">
+    </div>  
+    <div class="form-group">
+      <label for="exampleInputEmail1">Joining Date(Year)</label>
+      <input class="form-control" 
+            placeholder="Enter email"
+            formControlName = "JDY">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
